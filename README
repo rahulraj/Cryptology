@@ -2,3 +2,9 @@ This repository contains a group of Java programs I wrote a couple of years
 ago as part of a project to study how modern computing technology could
 be applied to clasical cryptology. It's mainly useful for students of
 cryptology and others interested in research in the field.
+
+I have to admit that I was a bit inexperienced with programming at the time
+with my experience coming primarily from small projects in AP Computer
+Science at high school. The code isn't as organized as I would be able to
+make it if I was doing the project now. Nonetheless, it does the desired
+functions and I hope it will be useful to others!
