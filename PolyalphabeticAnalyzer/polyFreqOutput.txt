@@ -1,0 +1,109 @@
+Single frequencies by letter:
+A:	838
+B:	429
+C:	489
+D:	1047
+E:	848
+F:	690
+G:	1031
+H:	806
+I:	771
+J:	619
+K:	322
+L:	865
+M:	501
+N:	368
+O:	1042
+P:	702
+Q:	686
+R:	507
+S:	576
+T:	457
+U:	828
+V:	976
+W:	249
+X:	734
+Y:	869
+Z:	1129
+
+--------------------
+
+Single frequencies by frequency:
+Z:	1129 which is %6.1428804613961585       82 greater than:
+D:	1047 which is %5.6967190815604765       5 greater than:
+O:	1042 which is %5.669514119375374       11 greater than:
+G:	1031 which is %5.609663202568148       55 greater than:
+V:	976 which is %5.310408618532021       107 greater than:
+Y:	869 which is %4.728222427770826       4 greater than:
+L:	865 which is %4.706458458022744       17 greater than:
+E:	848 which is %4.613961586593394       10 greater than:
+A:	838 which is %4.559551662223189       10 greater than:
+U:	828 which is %4.505141737852984       22 greater than:
+H:	806 which is %4.385439904238534       35 greater than:
+I:	771 which is %4.1950051689428145       37 greater than:
+X:	734 which is %3.993688448773056       32 greater than:
+P:	702 which is %3.8195766907883995       12 greater than:
+F:	690 which is %3.754284781544154       4 greater than:
+Q:	686 which is %3.7325208117960718       67 greater than:
+J:	619 which is %3.367974318515697       43 greater than:
+S:	576 which is %3.134011643723815       69 greater than:
+R:	507 which is %2.7585831655693998       6 greater than:
+M:	501 which is %2.7259372109472766       12 greater than:
+C:	489 which is %2.6606453017030307       32 greater than:
+T:	457 which is %2.4865335437183744       28 greater than:
+B:	429 which is %2.3341857554818       61 greater than:
+N:	368 which is %2.0022852168235485       46 greater than:
+K:	322 which is %1.751999564720605       73 greater than:
+W:	249 which is %1.3548071168181077       0 greater than:
+
+--------------------
+
+Most common repeated letters:
+OO: 141II: 105TT: 77GG: 44VV: 23YY: 22ZZ: 20AA: 18EE: 16DD: 16
+--------------------
+
+YS: 160 which is 0.6743656747871534 percent.
+XG: 149 which is 0.6280030346455365 percent.
+ZV: 145 which is 0.6111438927758577 percent.
+GZ: 143 which is 0.6027143218410183 percent.
+OO: 141 which is 0.5942847509061788 percent.
+GC: 133 which is 0.5605664671668212 percent.
+GE: 131 which is 0.5521368962319818 percent.
+IG: 123 which is 0.5184186124926241 percent.
+DI: 115 which is 0.4847003287532664 percent.
+FV: 115 which is 0.4847003287532664 percent.
+LY: 114 which is 0.4804855432858467 percent.
+DX: 113 which is 0.47627075781842704 percent.
+FA: 113 which is 0.47627075781842704 percent.
+AU: 110 which is 0.4636264014161679 percent.
+BD: 109 which is 0.4594116159487482 percent.
+EL: 109 which is 0.4594116159487482 percent.
+LD: 109 which is 0.4594116159487482 percent.
+XL: 109 which is 0.4594116159487482 percent.
+YL: 109 which is 0.4594116159487482 percent.
+LB: 108 which is 0.4551968304813285 percent.
+YO: 108 which is 0.4551968304813285 percent.
+ZG: 108 which is 0.4551968304813285 percent.
+TJ: 106 which is 0.44676725954648905 percent.
+II: 105 which is 0.4425524740790694 percent.
+SQ: 105 which is 0.4425524740790694 percent.
+VR: 103 which is 0.43412290314422997 percent.
+OH: 102 which is 0.42990811767681025 percent.
+ZO: 102 which is 0.42990811767681025 percent.
+DP: 101 which is 0.42569333220939054 percent.
+OB: 101 which is 0.42569333220939054 percent.
+
+--------------------
+
+GZV: 112
+GEL: 103
+IGC: 97
+IIG: 95
+YLB: 95
+LYL: 94
+YSQ: 94
+AUY: 93
+LBD: 93
+UYS: 93
+
+Total length is23726

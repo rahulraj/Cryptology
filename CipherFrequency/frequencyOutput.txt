@@ -1,0 +1,111 @@
+Single frequencies by letter:
+A:	223
+B:	31
+C:	112
+D:	120
+E:	303
+F:	47
+G:	56
+H:	101
+I:	237
+J:	3
+K:	10
+L:	108
+M:	64
+N:	195
+O:	203
+P:	65
+Q:	3
+R:	153
+S:	190
+T:	262
+U:	88
+V:	30
+W:	50
+X:	5
+Y:	58
+Z:	2
+
+--------------------
+
+Single frequencies by frequency:
+E:	303 which is %11.143802868701728       This letter appears 41 more times than
+T:	262 which is %9.6358955498345       This letter appears 25 more times than
+I:	237 which is %8.716439867598382       This letter appears 14 more times than
+A:	223 which is %8.201544685546157       This letter appears 20 more times than
+O:	203 which is %7.465980139757264       This letter appears 8 more times than
+N:	195 which is %7.171754321441706       This letter appears 5 more times than
+S:	190 which is %6.987863184994484       This letter appears 37 more times than
+R:	153 which is %5.627068775285031       This letter appears 33 more times than
+D:	120 which is %4.413387274733358       This letter appears 8 more times than
+C:	112 which is %4.1191614564178005       This letter appears 4 more times than
+L:	108 which is %3.972048547260022       This letter appears 7 more times than
+H:	101 which is %3.7146009562339093       This letter appears 13 more times than
+U:	88 which is %3.2364840014711294       This letter appears 23 more times than
+P:	65 which is %2.3905847738139023       This letter appears 1 more times than
+M:	64 which is %2.3538065465244578       This letter appears 6 more times than
+Y:	58 which is %2.13313718278779       This letter appears 2 more times than
+G:	56 which is %2.0595807282089003       This letter appears 6 more times than
+W:	50 which is %1.8389113644722324       This letter appears 3 more times than
+F:	47 which is %1.7285766826038984       This letter appears 16 more times than
+B:	31 which is %1.140125045972784       This letter appears 1 more times than
+V:	30 which is %1.1033468186833395       This letter appears 20 more times than
+K:	10 which is %0.3677822728944465       This letter appears 5 more times than
+X:	5 which is %0.18389113644722324       This letter appears 2 more times than
+Q:	3 which is %0.11033468186833395       This letter appears 0 more times than
+J:	3 which is %0.11033468186833395       This letter appears 1 more times than
+Z:	2 which is %0.0735564545788893       This letter appears 0 more times than
+
+--------------------
+
+Most common repeated letters:
+PP: 11
+LL: 10
+NN: 7
+WW: 6
+SS: 6
+OO: 6
+EE: 5
+TT: 4
+FF: 3
+MM: 2
+CC: 2
+
+--------------------
+
+Most common digraphs:
+TH: 54
+IN: 47
+IT: 42
+AT: 40
+RE: 39
+ON: 38
+OR: 38
+AN: 35
+EN: 35
+ST: 35
+ER: 33
+TE: 33
+HE: 32
+LI: 29
+DE: 28
+ES: 28
+IS: 28
+ND: 27
+TI: 27
+AR: 26
+
+--------------------
+
+Most common trigraphs:
+THE: 28
+AND: 20
+ING: 19
+ENT: 17
+STU: 15
+TUD: 15
+ATE: 14
+COM: 13
+DIS: 13
+ION: 13
+

@@ -1,0 +1,109 @@
+Single frequencies by letter:
+A:	2197
+B:	5685
+C:	5106
+D:	8119
+E:	2607
+F:	3090
+G:	1663
+H:	3900
+I:	9453
+J:	6502
+K:	5705
+L:	1959
+M:	5635
+N:	3932
+O:	8808
+P:	197
+Q:	2302
+R:	8989
+S:	6445
+T:	4485
+U:	5368
+V:	12461
+W:	10991
+X:	4447
+Y:	5723
+Z:	700
+
+--------------------
+
+Single frequencies by frequency:
+V:	12461 which is %9.13101143849519       1470 greater than:
+W:	10991 which is %8.053843730077894       1538 greater than:
+I:	9453 which is %6.9268478555569395       464 greater than:
+R:	8989 which is %6.586843898614338       181 greater than:
+O:	8808 which is %6.454213044720778       689 greater than:
+D:	8119 which is %5.949336479346958       1617 greater than:
+J:	6502 which is %4.764452000087932       57 greater than:
+S:	6445 which is %4.72268427261869       722 greater than:
+Y:	5723 which is %4.193626391341623       18 greater than:
+K:	5705 which is %4.1804365826671255       20 greater than:
+B:	5685 which is %4.165781239695462       50 greater than:
+M:	5635 which is %4.129142882266302       267 greater than:
+U:	5368 which is %3.9334940535945893       262 greater than:
+C:	5106 which is %3.741509060665792       621 greater than:
+T:	4485 which is %3.2864606613956284       38 greater than:
+X:	4447 which is %3.258615509749467       515 greater than:
+N:	3932 which is %2.881240428229122       32 greater than:
+H:	3900 which is %2.8577918794744592       810 greater than:
+F:	3090 which is %2.2642504891220714       483 greater than:
+E:	2607 which is %1.9103239563563887       305 greater than:
+Q:	2302 which is %1.6868299760385144       105 greater than:
+A:	2197 which is %1.6098894254372789       238 greater than:
+L:	1959 which is %1.4354908440744785       296 greater than:
+G:	1663 which is %1.218591768093853       963 greater than:
+Z:	700 which is %0.5129370040082363       503 greater than:
+P:	197 which is %0.14435512827088937       0 greater than:
+
+--------------------
+
+Most common repeated letters:
+VV: 1055JJ: 858DD: 817II: 416RR: 207YY: 184CC: 163MM: 157KK: 107BB: 79
+--------------------
+
+RO: 1841 which is 1.0879328684552654 percent.
+SO: 1768 which is 1.0447937596028838 percent.
+OV: 1251 which is 0.7392743174565654 percent.
+OW: 1229 which is 0.7262734901311901 percent.
+OI: 1211 which is 0.7156364495922468 percent.
+VV: 1055 which is 0.623448764921404 percent.
+WN: 993 which is 0.5868100697317102 percent.
+CV: 937 which is 0.5537170547216641 percent.
+VR: 931 which is 0.5501713745420164 percent.
+VK: 920 which is 0.5436709608793288 percent.
+IB: 870 which is 0.5141236260489304 percent.
+JJ: 858 which is 0.5070322656896348 percent.
+OU: 824 which is 0.48694007800496397 percent.
+WX: 823 which is 0.486349131308356 percent.
+DD: 817 which is 0.4828034511287082 percent.
+IW: 814 which is 0.48103061103888434 percent.
+UY: 799 which is 0.4721664105897648 percent.
+CX: 757 which is 0.44734664933223023 percent.
+KW: 747 which is 0.44143718236615054 percent.
+MY: 735 which is 0.434345822006855 percent.
+YR: 707 which is 0.4177993145018319 percent.
+WB: 702 which is 0.41484458101879207 percent.
+KV: 701 which is 0.4142536343221841 percent.
+IR: 693 which is 0.4095260607493204 percent.
+TS: 690 which is 0.4077532206594965 percent.
+VS: 686 which is 0.40538943387306464 percent.
+XH: 681 which is 0.4024347003900248 percent.
+VX: 680 which is 0.40184375369341685 percent.
+RW: 674 which is 0.3982980735137691 percent.
+IY: 668 which is 0.3947523933341213 percent.
+
+--------------------
+
+ROV: 622
+SOI: 598
+WXH: 367
+UYR: 345
+KWN: 277
+NDD: 264
+OVK: 230
+ROW: 217
+OIB: 212
+SOU: 207
+
+Total length is169220

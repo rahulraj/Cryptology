@@ -1,0 +1,108 @@
+Single frequencies by letter:
+A:	2962
+B:	2097
+C:	8622
+D:	204
+E:	154
+F:	3163
+G:	1832
+H:	8808
+I:	4281
+J:	8179
+K:	2426
+L:	5301
+M:	8925
+N:	1251
+O:	119
+P:	12762
+Q:	10460
+R:	2766
+S:	8903
+T:	15937
+U:	3230
+V:	1175
+W:	11580
+X:	110
+Y:	6502
+Z:	4720
+
+--------------------
+
+Single frequencies by frequency:
+T:	15937 which is %11.678110046970374       3175 greater than:
+P:	12762 which is %9.35157435021873       1182 greater than:
+W:	11580 which is %8.485443580593396       1120 greater than:
+Q:	10460 which is %7.664744374180217       1535 greater than:
+M:	8925 which is %6.539946801105014       22 greater than:
+S:	8903 which is %6.523825923836182       95 greater than:
+H:	8808 which is %6.454213044720778       186 greater than:
+C:	8622 which is %6.317918355084305       443 greater than:
+J:	8179 which is %5.99330250826195       1677 greater than:
+Y:	6502 which is %4.764452000087932       1201 greater than:
+L:	5301 which is %3.8843986546395155       581 greater than:
+Z:	4720 which is %3.4586609413126794       439 greater than:
+I:	4281 which is %3.1369761630846567       1051 greater than:
+U:	3230 which is %2.366837889923719       67 greater than:
+F:	3163 which is %2.317742490968645       201 greater than:
+A:	2962 which is %2.1704562941034227       196 greater than:
+R:	2766 which is %2.0268339329811162       340 greater than:
+K:	2426 which is %1.7776931024628302       329 greater than:
+B:	2097 which is %1.5366127105789593       265 greater than:
+G:	1832 which is %1.3424294162044128       581 greater than:
+N:	1251 which is %0.9166917028775766       76 greater than:
+V:	1175 which is %0.8610013995852537       971 greater than:
+D:	204 which is %0.14948449831097171       50 greater than:
+E:	154 which is %0.11284614088181198       35 greater than:
+O:	119 which is %0.08719929068140017       9 greater than:
+X:	110 which is %0.08060438634415142       0 greater than:
+
+--------------------
+
+Most common repeated letters:
+YY: 858
+TT: 624
+PP: 599
+SS: 474
+WW: 340
+JJ: 148
+RR: 107
+CC: 99
+LL: 96
+II: 67
+
+--------------------
+
+PH: 3494
+HT: 2425
+TJ: 1746
+HQ: 1635
+QC: 1618
+WZ: 1606
+MC: 1490
+TP: 1372
+SP: 1360
+TC: 1333
+CL: 1316
+TS: 1271
+QP: 1265
+TQ: 1261
+WJ: 1234
+JT: 1222
+MS: 1118
+HM: 1052
+PW: 1047
+WC: 1034
+
+--------------------
+
+PHT: 1220
+QCL: 712
+UWZ: 531
+HTJ: 442
+PHQ: 414
+HQP: 407
+YTP: 389
+MCK: 368
+PHM: 368
+HMS: 345
+

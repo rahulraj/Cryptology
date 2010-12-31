@@ -1,0 +1,176 @@
+Number of alphabets: 2
+Total number of characters: 118847
+Total number correct: 73261
+Total number wrong: 16628
+Total number unattempted: 28958
+Percentage correct: 0.6164312098748812
+
+Number of alphabets: 3
+Total number of characters: 118847
+Total number correct: 59626
+Total number wrong: 26802
+Total number unattempted: 32419
+Percentage correct: 0.5017038713640226
+
+Number of alphabets: 4
+Total number of characters: 118847
+Total number correct: 52862
+Total number wrong: 33823
+Total number unattempted: 32162
+Percentage correct: 0.4447903607158784
+
+Number of alphabets: 5
+Total number of characters: 118847
+Total number correct: 56319
+Total number wrong: 29925
+Total number unattempted: 32603
+Percentage correct: 0.47387817950810707
+
+Number of alphabets: 6
+Total number of characters: 118847
+Total number correct: 55592
+Total number wrong: 28206
+Total number unattempted: 35049
+Percentage correct: 0.4677610709567764
+
+Number of alphabets: 7
+Total number of characters: 118847
+Total number correct: 56755
+Total number wrong: 30825
+Total number unattempted: 31267
+Percentage correct: 0.4775467618029904
+
+Number of alphabets: 8
+Total number of characters: 118847
+Total number correct: 44294
+Total number wrong: 37391
+Total number unattempted: 37162
+Percentage correct: 0.37269767011367555
+
+Number of alphabets: 9
+Total number of characters: 118847
+Total number correct: 52675
+Total number wrong: 31810
+Total number unattempted: 34362
+Percentage correct: 0.4432169091352748
+
+Number of alphabets: 10
+Total number of characters: 118847
+Total number correct: 52033
+Total number wrong: 31797
+Total number unattempted: 35017
+Percentage correct: 0.4378150058478548
+
+Number of alphabets: 11
+Total number of characters: 118847
+Total number correct: 53669
+Total number wrong: 22940
+Total number unattempted: 42238
+Percentage correct: 0.45158060363324276
+
+Number of alphabets: 12
+Total number of characters: 118847
+Total number correct: 45112
+Total number wrong: 35765
+Total number unattempted: 37970
+Percentage correct: 0.37958046900636955
+
+Number of alphabets: 13
+Total number of characters: 118847
+Total number correct: 51853
+Total number wrong: 27673
+Total number unattempted: 39321
+Percentage correct: 0.4363004535242791
+
+Number of alphabets: 14
+Total number of characters: 118847
+Total number correct: 51618
+Total number wrong: 30227
+Total number unattempted: 37002
+Percentage correct: 0.4343231213240553
+
+Number of alphabets: 15
+Total number of characters: 118847
+Total number correct: 59020
+Total number wrong: 24018
+Total number unattempted: 35809
+Percentage correct: 0.49660487854131785
+
+Number of alphabets: 16
+Total number of characters: 118847
+Total number correct: 48339
+Total number wrong: 33461
+Total number unattempted: 37047
+Percentage correct: 0.4067330264962515
+
+Number of alphabets: 17
+Total number of characters: 118847
+Total number correct: 57751
+Total number wrong: 24466
+Total number unattempted: 36630
+Percentage correct: 0.4859272846601092
+
+Number of alphabets: 18
+Total number of characters: 118847
+Total number correct: 50045
+Total number wrong: 32226
+Total number unattempted: 36576
+Percentage correct: 0.42108761685191887
+
+Number of alphabets: 19
+Total number of characters: 118847
+Total number correct: 49071
+Total number wrong: 32276
+Total number unattempted: 37500
+Percentage correct: 0.4128922059454593
+
+Number of alphabets: 20
+Total number of characters: 118847
+Total number correct: 53014
+Total number wrong: 27297
+Total number unattempted: 38536
+Percentage correct: 0.4460693160113423
+
+Number of alphabets: 21
+Total number of characters: 118847
+Total number correct: 52460
+Total number wrong: 31013
+Total number unattempted: 35374
+Percentage correct: 0.44140786052655934
+
+Number of alphabets: 22
+Total number of characters: 118847
+Total number correct: 50516
+Total number wrong: 30760
+Total number unattempted: 37571
+Percentage correct: 0.4250506954319419
+
+Number of alphabets: 23
+Total number of characters: 118847
+Total number correct: 49589
+Total number wrong: 27581
+Total number unattempted: 41677
+Percentage correct: 0.4172507509655271
+
+Number of alphabets: 24
+Total number of characters: 118847
+Total number correct: 50139
+Total number wrong: 29065
+Total number unattempted: 39643
+Percentage correct: 0.4218785497320084
+
+Number of alphabets: 25
+Total number of characters: 118847
+Total number correct: 43843
+Total number wrong: 35316
+Total number unattempted: 39688
+Percentage correct: 0.3689028751251609
+
+Number of alphabets: 26
+Total number of characters: 118847
+Total number correct: 47813
+Total number wrong: 29742
+Total number unattempted: 41292
+Percentage correct: 0.4023071680395803
+
+

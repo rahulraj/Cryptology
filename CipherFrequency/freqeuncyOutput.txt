@@ -1,0 +1,233 @@
+Single frequencies by letter:
+A:	5567
+B:	3825
+C:	5035
+D:	4096
+E:	7796
+F:	5098
+G:	5147
+H:	3222
+I:	6440
+J:	3171
+K:	8517
+L:	4474
+M:	5484
+N:	5825
+O:	5687
+P:	4111
+Q:	5866
+R:	4082
+S:	5428
+T:	5146
+U:	4912
+V:	6882
+W:	5274
+X:	4989
+Y:	6395
+Z:	4001
+
+--------------------
+
+Single frequencies by frequency:
+K:	8517 which is %6.240932072983074       721 greater than:
+E:	7796 which is %5.712610830219096       914 greater than:
+V:	6882 which is %5.042866564080017       442 greater than:
+I:	6440 which is %4.718985857697663       45 greater than:
+Y:	6395 which is %4.686011577636111       529 greater than:
+Q:	5866 which is %4.298380596468088       41 greater than:
+N:	5825 which is %4.268337363523118       138 greater than:
+O:	5687 which is %4.167216238001026       120 greater than:
+A:	5567 which is %4.079284824503554       83 greater than:
+M:	5484 which is %4.018465596834469       56 greater than:
+S:	5428 which is %3.9774309372023158       154 greater than:
+W:	5274 which is %3.8645856232138933       127 greater than:
+G:	5147 which is %3.771524877262402       1 greater than:
+T:	5146 which is %3.770792115483256       48 greater than:
+F:	5098 which is %3.7356195500842673       63 greater than:
+C:	5035 which is %3.6894555579980945       46 greater than:
+X:	4989 which is %3.655748516157397       77 greater than:
+U:	4912 which is %3.5993258591631863       438 greater than:
+L:	4474 which is %3.2783761998974135       363 greater than:
+P:	4111 which is %3.0123836740675607       15 greater than:
+D:	4096 which is %3.0013922473803767       14 greater than:
+R:	4082 which is %2.9911335824723384       81 greater than:
+Z:	4001 which is %2.9317798783615445       176 greater than:
+B:	3825 which is %2.8028138052319194       603 greater than:
+H:	3222 which is %2.3609584524071225       51 greater than:
+J:	3171 which is %2.3235876016706967       0 greater than:
+
+--------------------
+
+Most common repeated letters:
+AA: 253
+WW: 182
+EE: 179
+KK: 152
+YY: 142
+SS: 140
+II: 115
+CC: 98
+VV: 95
+GG: 95
+OO: 88
+
+--------------------
+
+NF: 1823
+VK: 1325
+EQ: 935
+GE: 935
+OV: 918
+QA: 908
+ZO: 877
+EC: 841
+YK: 841
+KI: 813
+KV: 794
+WE: 774
+EY: 728
+KU: 728
+TE: 704
+SD: 691
+NX: 687
+TY: 617
+ML: 613
+RG: 607
+
+--------------------
+
+NFK: 195
+NFG: 183
+FGE: 173
+NFM: 171
+XNF: 171
+AEC: 160
+ZOA: 148
+AAE: 139
+OAA: 136
+EBP: 135
+
+--------------------
+
+For research purposes only!
+Digraphs starting with K:
+KC: 99
+KB: 110
+KP: 138
+KL: 144
+KW: 145
+KK: 152
+KO: 153
+KQ: 155
+KA: 157
+KG: 157
+KJ: 164
+KH: 167
+KR: 170
+KS: 185
+KD: 202
+KY: 227
+KZ: 239
+KM: 248
+KX: 258
+KN: 273
+KT: 275
+KE: 321
+KF: 339
+KU: 728
+KV: 794
+KI: 813
+
+--------------------
+
+For research purposes only!
+Digraphs ending in K:
+NK: 54
+RK: 61
+BK: 66
+UK: 96
+OK: 107
+XK: 109
+SK: 111
+LK: 117
+HK: 118
+DK: 126
+WK: 127
+ZK: 137
+JK: 141
+KK: 152
+CK: 184
+TK: 192
+EK: 196
+PK: 213
+AK: 266
+GK: 296
+FK: 389
+QK: 447
+IK: 452
+MK: 457
+YK: 841
+VK: 1325
+
+--------------------
+
+For research purposes only!
+Digraphs starting with P:
+PF: 30
+PW: 35
+PC: 39
+PO: 41
+PJ: 47
+PY: 50
+PR: 53
+PP: 55
+PL: 58
+PB: 60
+PQ: 62
+PI: 69
+PG: 72
+PN: 79
+PH: 81
+PX: 81
+PE: 82
+PV: 82
+PD: 90
+PZ: 106
+PT: 125
+PK: 213
+PA: 283
+PU: 314
+PM: 489
+PS: 573
+
+--------------------
+
+For research purposes only!
+Digraphs ending in P:
+NP: 28
+GP: 29
+DP: 46
+ZP: 46
+JP: 48
+PP: 55
+XP: 58
+FP: 61
+HP: 61
+OP: 66
+WP: 80
+CP: 82
+TP: 88
+VP: 92
+YP: 99
+MP: 101
+LP: 112
+KP: 138
+IP: 142
+AP: 152
+EP: 183
+QP: 247
+BP: 275
+SP: 286
+UP: 317
+RP: 385
+

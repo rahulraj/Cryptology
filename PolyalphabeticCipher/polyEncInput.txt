@@ -1,0 +1,903 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{url}
+% This
+% ANY LATEX paper.  Typically I'll use this file and some other file in the
+% directory of the paper, this one for general math things, that one for
+% things specific to that paper.
+%
+% font's used and general paper things.
+\font\tenrm=cmr10
+\font\ninerm=cmr9
+\font\eightrm=cmr8
+\font\sevenrm=cmr7
+% \font\title=cmbx10 scaled \magstep1 % extra big title font
+\font\ss=cmss10 % used by \proof
+\font\smallcaps=cmcsc10 % used to label Theorems, etc.
+% imhibit black bars on overflows
+%
+\overfullrule=0pt
+
+%
+% English words that I always italizice in papers.
+% Some words that appear in math mode alot that I wasn roman
+%
+
+\newcommand{\ACTIN}{ACT_{IN}}
+\newcommand{\ACTOUT}{ACT_{OUT}}
+\newcommand{\NN}{{\rm ANSBY}}
+\newcommand{\CELL}{{\rm CELL}}
+\newcommand{\pe}{p(e)}
+\newcommand{\KD}{{\rm KD}}
+\newcommand{\g}{g}
+\newcommand{\modbp}{{{\rm mod}_n^{\M}}}
+\newcommand{\MOD}{{{\rm MOD}_n^{\N}}}
+\newcommand{\MODk}{{{\rm MOD}_{n,k}^{N(n)}}}
+\newcommand{\N}{N(n)}
+\newcommand{\M}{M(m)}
+\newfont{\Bbb}{msbm10}
+\newcommand{\USEDCOL}{\hbox{ USED-COL} }
+\newcommand{\COL}{\hbox{ COL } }
+\newcommand{\COLp}{\hbox{ COL' } }
+\newcommand{\real} { \mbox {\Bbb \symbol{82}}}
+\newcommand{\Z} {\mbox{\Bbb \symbol{90}}}
+\newcommand{\rat} { \mbox {\Bbb \symbol{81}}}
+\newcommand{\nat} { \mbox {\Bbb \symbol{78}}}
+
+\newcommand{\CC}[2]{\zete_{#1}^{#2}}
+\newcommand{\ann}{\wedge}
+\newcommand{\ore}{\vee}
+
+\newcommand{\GOOD}{{\rm GOOD}}
+\newcommand{\OFF}{{\rm OFF}}
+\newcommand{\MAJm}{{\rm MAJ}_m}
+\newcommand{\MAJL}{{\rm MAJ}_{\alpha m}}
+\newcommand{\PARTk}{{\rm PART}_{m,k}}
+\newcommand{\PARTnone}{{\rm PART}_{n_1,k}}
+\newcommand{\PARTntwo}{{\rm PART}_{n_2,k}}
+\newcommand{\PARTbk}{{\rm PART}_{b,k}}
+\newcommand{\PARTkm}{{\rm PART}_{m,k}}
+\newcommand{\PARTkmn}{{\rm PART}_{m_0,k}}
+
+
+\newcommand{\fHk}{f_k^{\cal H}}
+\newcommand{\fGHk}{f_k^{\G\times{\cal{H}}}}
+\newcommand{\fGit}{f_3^{\G^i}}
+\newcommand{\fGkr}{f_{k,r}^\G}
+\newcommand{\fZmkr}{f_{k,r}^{\Z_m}}
+\newcommand{\fZkr}{f_{k}^{\Z_m}}
+\newcommand{\lecc}{\le_{\rm cc}^{O(1)}}
+\newcommand{\eqcc}{\equiv_{\rm cc}^{O(1)}}
+\newcommand{\fGkTone}{f_{k,T_1}^\G}
+\newcommand{\fGkTtwo}{f_{k,T_2}^\G}
+\newcommand{\fGkone}{f_k^\G_1}
+\newcommand{\fGktwo}{f_k^\G_2}
+\newcommand{\Gp}{{\cal G}'}
+\newcommand{\fGL}{f_{\beta\log g}^{\G}}
+\newcommand{\fGik}{f_k^{\G_i}}
+\newcommand{\fGk}{f_k^\G}
+\newcommand{\fZTk}{f_k^{\Z_T}}
+\newcommand{\fZTt}{f_3^{\Z_T}}
+\newcommand{\fZik}{f_k^{\Z_i}}
+\newcommand{\fZmk}{f_k^{\Z_m}}
+\newcommand{\fZmkT}{f_{k,T}^{\Z_m}}
+\newcommand{\fZttnk}{f_k^{\Z_{2^n}}}
+\newcommand{\fZttnt}{f_k^{\Z_{2^n}}}
+\newcommand{\fZgonem}{f_k^{\Z_{g^{1/m}}}}
+\newcommand{\fZgonemz}{f_k^{\Z_{g^{1/m_0}}}}
+\newcommand{\fGGk}{f_k^{\G_1\times \G_2}}
+\newcommand{\fGonek}{f_k^{\G_1}}
+\newcommand{\fGkONE}{f_{k,1^n}^\G}
+\newcommand{\fGkminus}{f_{k-1}^\G}
+\newcommand{\fGcminus}{f_{c-1}^\G}
+\newcommand{\fGpt}{f_3^{\Gp}}
+\newcommand{\fGpk}{f_k^{\Gp}}
+\newcommand{\fGt}{f_3^\G}
+\newcommand{\fZTpt}{f_3^{\Z_{T'}}}
+\newcommand{\fZTpk}{f_k^{\Z_{T'}}}
+\newcommand{\fGkT}{f_{k,\T}^\G}
+\newcommand{\fGtT}{f_{3,\T}^\G}
+\newcommand{\fGkID}{f_{k,ID}^\G}
+
+\newcommand{\hsc}{{h_s^2}}
+
+\newcommand{\fMk}{f_k^\M}
+\newcommand{\fMt}{f_3^\M}
+\newcommand{\fMkT}{f_{k,\T}^\M}
+\newcommand{\fMtT}{f_{3,\T}^\M}
+\newcommand{\fkZ}{f_{k}^{\Z_T}}
+\newcommand{\ftZ}{f_{3}^{\Z_T}}
+
+\newcommand{\chip}{\chi^*}
+\newcommand{\chik}{\chi_k^*}
+\newcommand{\chikM}{\chi_k^*(\M)}
+\newcommand{\chitM}{\chi_3^*(\M)}
+\newcommand{\chikG}{\chi_k^*(\G)}
+\newcommand{\chiLG}{\chi_{\beta\log g}^*(\G)}
+\newcommand{\chikGone}{\chi_k^*(\G_1)}
+\newcommand{\chikGa}{\chi_k^*(\G_a)}
+\newcommand{\chikGi}{\chi_k^*(\G_i)}
+\newcommand{\chitG}{\chi_3^*(\G)}
+\newcommand{\chikZi}{\chi_k^*(\Z_{h_i})}
+\newcommand{\chikZT}{\chi_k^*(\Z_T)}
+
+%\newcommand{\M}{{\cal M}}
+\newcommand{\G}{{\cal G}}
+\newcommand{\T}{T}
+\newcommand{\op}{\odot}
+\newcommand{\bigop}{\bigodot}
+\newcommand{\rr}{{\rm r}}
+\newcommand{\sz}{{\rm r}_3}
+\newcommand{\xm}{x^{-}}
+\newcommand{\ym}{y^{-}}
+\newcommand{\zm}{z^{-}}
+\newcommand{\sigp}[1]{\Sigme_{#1}^{{\rm p}}}
+\newcommand{\pip}[1]{\Pi_{#1}^{{\rm p}}}
+\newcommand{\sigsp}[1]{\Sigme_{#1}^{{\rm p, SPARSE}}}
+\newcommand{\pisp}[1]{\Pi_{#1}^{{\rm p, SPARSE}}}
+\newcommand{\Reone}{R_e^1}
+\newcommand{\Retwo}{R_e^2}
+\newcommand{\Rethree}{R_e^3}
+\newcommand{\Reonesub}[1]{R_{\ang{e,{#1}}}^1}
+\newcommand{\Retwosub}[1]{R_{\ang{e,{#1}}}^2}
+\newcommand{\dom}{{\rm dom }}
+\newcommand{\ran}{{\rm ran }}
+\newcommand{\nd}{{\rm nd }}
+\newcommand{\rd}{{\rm rd }}
+%\newcommand{\th}{{\rm th }}
+\newcommand{\eth}{{\rm e}^{th}}
+\newcommand{\ith}{{i}^{\rm th}}
+\newcommand{\Prob}{{\rm Pr } }
+\renewcommand{\Pr}{{\rm Pr } }
+\newcommand{\pr}{{\rm Pr } }
+\newcommand{\DTIME}{{\rm DTIME } }
+\newcommand{\NTIME}{{\rm NTIME } }
+\newcommand{\DSPACE}{{\rm DSPACE } }
+\newcommand{\NSPACE}{{\rm NSPACE } }
+%
+% Commomly used Math things  MATH
+%
+
+\newcommand{\PH}{{\rm PH}}
+\newcommand{\FML}{{\rm FML}}
+\newcommand{\ED}{{\rm ED}}
+\newcommand{\Max}{{\rm MAX}}
+\newcommand{\Med}{{\rm MED}}
+\newcommand{\Sort}{{\rm SORT}}
+\newcommand{\Sel}{{\rm SEL}}
+
+
+\newcommand{\mink}{{\rm MIN}_k}
+\newcommand{\maxn}{{\rm MAX}_n}
+\newcommand{\maxk}{{\rm MAX}_k}
+\newcommand{\maxnm}{{\rm MAX}_{n-1}}
+\newcommand{\selin}{{\rm SEL}_n^i}
+\newcommand{\selina}{{\rm SELALL}_n^i}
+\newcommand{\secn}{{\rm SEC}_n}
+\newcommand{\medn}{{\rm MED}_n}
+\newcommand{\sortn}{{\rm SORT}_n}
+\newcommand{\sortk}{{\rm SORT}_k}
+\newcommand{\hilon}{{\rm HI\hbox{-}LO}_n}
+
+\newcommand{\Abar}{\overline A}
+\newcommand{\Bbar}{\overline B}
+\newcommand{\Kbar}{\overline K}
+\newcommand{\Kleenestar}{{\textstyle *}}
+\newcommand{\Kstar}{{\textstyle *}}
+\newcommand{\NE}{ {\rm NE} }
+\newcommand{\SPARSE}{ {\rm SPARSE} }
+\newcommand{\TOTbar}{{\overline {TOT}}}
+\newcommand{\Uei}{U_{\ang{e,i}}}
+\newcommand{\ang}[1]{\langle#1\rangle}
+\newcommand{\co}{ {\rm co} }
+\newcommand{\cvg}{\downarrow}
+\newcommand{\dvg}{\uparrow}
+\newcommand{\ei}{\ang{e,i}}
+\renewcommand{\gets}{\leftarrow}
+\newcommand{\goes}{\rightarrow}
+\newcommand{\jo}{\oplus}
+\newcommand{\kstar}{{\textstyle *}}
+\newcommand{\move}{\vdash}
+\newcommand{\penpns}{\hbox{${\rm P}={\rm NP}$}}
+\newcommand{\penpq}{\hbox{P$=$?NP\ }}
+\newcommand{\penp}{\hbox{P$=$NP\ }}
+\newcommand{\phivec}[1]{{\ang {\phi_1,\ldots,\phi_{#1}}}}
+\newcommand{\ppolyA}{{{\rm P}^A/{\rm poly}}}
+\newcommand{\xibar}{{\bar x_i}}
+\newcommand{\xjbar}{{\bar x_j}}
+\newcommand{\xkbar}{{\bar x_k}}
+\newcommand{\yei}{y_{\ang{e,i}}}
+\newcommand{\set}[2]{ \{ {#1}_1,\ldots,{#1}_{#2} \} }
+\newcommand{\m}{{\rm m}}
+\newcommand{\ctt}{{\rm ctt}}
+\newcommand{\wtt}{{\rm wtt}}
+\newcommand{\btt}{{\rm btt}}
+\newcommand{\bwtt}{{\rm bwtt}}
+\newcommand{\ktt}{{k\rm\mbox{-}tt}}
+\newcommand{\ntt}{{n\rm\mbox{-}tt}}
+\newcommand{\kwtt}{{k\rm\mbox{-}wtt}}
+\newcommand{\nwtt}{{n\rm\mbox{-}wtt}}
+\newcommand{\kT}{{k\rm\mbox{-}T}}
+\newcommand{\onett}{{1\rm\mbox{-}tt}}
+\newcommand{\leonett}{{\le_{\onett}}}
+\newcommand{\eqonett}{{\equiv_{\onett}}}
+\newcommand{\pTE}{\equiv_{\rm T}^p}
+\newcommand{\UNIQTSP}{\rm UNIQTSP}
+\newcommand{\TAUT}{{\rm TAUT}}
+\newcommand{\SAT}{{\rm SAT}}
+\newcommand{\usat}{{\rm UNIQSAT}}
+\newcommand{\paritysat}{{\rm PARITYSAT}}
+\newcommand{\LSAT}{{\rm LSAT}}
+\newcommand{\R}{{\rm R}}
+\renewcommand{\P}{{\rm P}}
+\newcommand{\PCP}{{\rm PCP}}
+\newcommand{\NP}{{\rm NP}}
+\newcommand{\NC}{{\rm NC}}
+\newcommand{\BPP}{{\rm BPP}}
+\newcommand{\AM}{{\rm AM}}
+\newcommand{\IP}{{\rm IP}}
+\newcommand{\coNP}{\rm co\hbox{-}NP}
+\newcommand{\QBF}{\rm QBF}
+\newcommand{\PSPACE}{\rm PSPACE}
+\newcommand{\alephnot}{\aleph_0}
+\newcommand{\twoalephnot}{2^{\aleph_0}}
+\newcommand{\lam}{\lambda}
+\newcommand{\lamx}[1]{\lambda x [{#1}] }
+\newcommand{\bits}[1]{\{0,1\}^{{#1}}}
+\newcommand{\bit}{\{0,1\}}
+\newcommand{\PF}{{\rm PF}}
+\newcommand{\FP}{{\rm PF}}
+\newcommand{\poly}{{\rm poly}}
+\newcommand{\polylog}{{\rm polylog}}
+\newcommand{\ppoly}{\P/\poly}
+\newcommand{\Rpos}{{\sf R}^+}
+\newcommand{\F}[2]{{\rm F}_{#1}^{#2}}
+\newcommand{\FK}[1]{{\rm F}_{#1}^{K}}
+\newcommand{\FA}[1]{{\rm F}_{#1}^{A}}
+\newcommand{\FAp}[1]{{\rm F}_{#1}^{A'}}
+\newcommand{\FB}[1]{{\rm F}_{#1}^{A}}
+\newcommand{\FC}[1]{{\rm F}_{#1}^{A}}
+\newcommand{\FX}[1]{{\rm F}_{#1}^{X}}
+\newcommand{\FY}[1]{{\rm F}_{#1}^{Y}}
+\newcommand{\V}[2]{{\rm V}_{#1}^{#2}}
+\newcommand{\VK}[1]{{\rm V}_{#1}^{K}}
+\newcommand{\VA}[1]{{\rm V}_{#1}^{A}}
+\newcommand{\VB}[1]{{\rm V}_{#1}^{B}}
+\newcommand{\VC}[1]{{\rm V}_{#1}^{C}}
+\newcommand{\VX}[1]{{\rm V}_{#1}^{X}}
+\newcommand{\VY}[1]{{\rm V}_{#1}^{Y}}
+\newcommand{\PFq}[2]{\PF_{{#1\rm\mbox{-}T}}^{#2}}
+\newcommand{\Q}[2]{\P_{{#1\rm\mbox{-}T}}^{#2}}
+\newcommand{\EN}[1]{{\rm EN}({#1})}
+\newcommand{\ENA}[1]{{\rm EN}^A({#1})}
+\newcommand{\ENX}[1]{{\rm EN}^X({#1})}
+\newcommand{\FQp}[2]{\PF_{{#1\rm\mbox{-}tt}}^{#2}}
+\newcommand{\Qp}[2]{\P_{{#1\rm\mbox{-}tt}}^{#2}}
+\newcommand{\PARITY}[2]{{\rm PARITY}_{#1}^{#2}}
+\newcommand{\parity}[2]{{\rm PARITY}_{#1}^{#2}}
+\newcommand{\odd}[2]{{\rm ODD}_{#1}^{#2}}
+\newcommand{\PARITYP}{\PARITY\P}
+\newcommand{\POW}{{\rm POW}}
+\newcommand{\FAC}{{\rm FAC}}
+\newcommand{\POLY}{{\rm POLY}}
+\newcommand{\card}[2]{\#_{#1}^{#2}}
+\newcommand{\pleq}[1]{\leq_{#1}^{\rm p}}
+\newcommand{\plem}{\le_{\rm m}^{\rm p}}
+\newcommand{\pleT}{\le_{\rm T}^{\rm p}}
+%
+% these are vectors with parameters
+%
+\newcommand{\xvec}[1]{\ifcase 3{#1} {\ang {x_1,x_2,x_3} } \else
+\ifcase 4{#1} {\ang{x_1,x_2,x_3,x_4}} \else {\ang {x_1,\ldots,x_{#1}}}\fi\fi}
+%
+\newcommand{\yvec}[1]{\ifcase 3{#1} {\ang {y_1,y_2,y_3} } \else
+\ifcase 4{#1} {\ang{y_1,y_2,y_3,y_4}} \else {\ang {y_1,\ldots,y_{#1}}}\fi\fi}
+%
+%
+\newcommand{\zvec}[1]{\ifcase 3{#1} {\ang {z_1,z_2,z_3} } \else
+\ifcase 4{#1} {\ang{z_1,z_2,z_3,z_4}} \else {\ang {z_1,\ldots,z_{#1}}}\fi\fi}
+%
+%
+\newcommand{\vecc}[2]{\ifcase 3{#2} {\ang { {#1}_1,{#1}_2,{#1}_3 } } \else
+\ifcase 4{#1} {\ang { {#1}_1,{#1}_2,{#1}_3,{#1}_{4} } }
+\else {\ang { {#1}_1,\ldots,{#1}_{#2}}}\fi\fi}
+%
+%
+\newcommand{\veccd}[3]{\ifcase 3{#2} {\ang { {#1}_{{#3}1},{#1}_{{#3}2},{#1}_{{#3}3} } } \else
+\ifcase 4{#1} {\ang { {#1}_{{#3}1},{#1}_{{#3}2},{#1}_{#3}3},{#1}_{{#3}4} }
+\else {\ang { {#1}_{{#3}1},\ldots,{#1}_{{#3}{#2}}}}\fi\fi}
+%
+\newcommand{\xyvec}[1]{\ang{ \ang{x_1,y_1},\ang{x_2,y_2}\ldots,\ang{x_{#1},y_{#1}}}}
+%
+%
+% if you want to begin on zero instead of 1 then use veccz
+%
+\newcommand{\veccz}[2]{\ifcase 3{#2} {\ang { {#1}_0,{#1}_2,{#1}_3 } } \else
+\ifcase 4{#1} {\ang { {#1}_0,{#1}_2,{#1}_3,{#1}_{4} } }
+\else {\ang { {#1}_0,\ldots,{#1}_{#2}}}\fi\fi}
+%
+\newcommand{\phive}[1]{{\phi_1,\ldots,\phi_{#1}}}
+%
+% these are lists with paramters
+%
+\newcommand{\xve}[1]{\ifcase 3{#1} {x_1,x_2,x_3} \else
+\ifcase 4{#1} {x_1,x_2,x_3,x_4} \else {x_1,\ldots,x_{#1}}\fi\fi}
+%
+\newcommand{\yve}[1]{\ifcase 3{#1} {y_1,y_2,y_3} \else
+\ifcase 4{#1} {y_1,y_2,y_3,y_4} \else {y_1,\ldots,y_{#1}}\fi\fi}
+%
+%
+\newcommand{\zve}[1]{\ifcase 3{#1} {z_1,z_2,z_3} \else
+\ifcase 4{#1} {z_1,z_2,z_3,z_4} \else {z_1,\ldots,z_{#1}}\fi\fi}
+%
+\newcommand{\ve}[2]{\ifcase 3#2 {{#1}_1,{#1}_2,{#1}_3} \else
+\ifcase 4#2 {{#1}_1,{#1}_2,{#1}_3,{#1}_{4}}
+\else {{#1}_1,\ldots,{#1}_{#2}}\fi\fi}
+%
+%
+\newcommand{\ved}[3]{\ifcase 3#2 {{#1}_{{#3}1},{#1}_{{#3}2},{#1}_{{#3}3}} \else
+\ifcase 4#2 {{#1}_{{#3}1},{#1}_{{#3}2},{#1}_{{#3}3},{#1}_{{#3}4}}
+\else {{#1}_{{#3}1},\ldots,{#1}_{{#3}{#2}}}\fi\fi}
+%
+\newcommand{\fuve}[3]{
+\ifcase 3#2
+{{#3}({#1}_1),{#3}({#1}_2,{#3}({#1}_3)} \else
+\ifcase 4#2
+{{#3}({#1}_1),{#3}({#1}_2),{#3}({#1}_3),{#3}({#1}_4)}
+\else
+{{#3}({#1}_1),\ldots,{#3}({#1}_{#2})}\fi\fi}
+%
+\newcommand{\fuvec}[3]{\ang{\fuve{#1}{#2}{#3}}}
+\newcommand{\xse}[1]{\xve{#1}}
+\newcommand{\yse}[1]{\yve{#1}}
+\newcommand{\zse}[1]{\zve{#1}}
+\newcommand{\fuse}[3]{\fuve{#1}{#2}{#3}}
+%
+% these are sets with parameters
+%
+\newcommand{\xset}[1]{\{\xve{#1}\}}
+\newcommand{\yset}[1]{\{\yve{#1}\}}
+\newcommand{\zset}[1]{\{\zve{#1}\}}
+%\newcommand{\set}[2]{\{\ve{#1}{#2}\}}
+\newcommand{\setd}[3]{\{\ved{#1}{#2}{#3}\}}
+\newcommand{\fuset}[3]{\{\fuve{#1}{#2}{#3}\}}
+%
+% these are tuples with parameters
+%
+%OLD VERSION:
+%\newcommand{\xtu}[1]{( {\ifcase 3{#1} {x_1,x_2,x_3} \else
+%\ifcase 4{#1} {x_1,x_2,x_3,x_4} \else {x_1,\ldots,x_{#1}}\fi\fi})}
+
+
+\newcommand{\setmathchar}[1]{\ifmmode#1\else$#1$\fi}
+\newcommand{\vlist}[2]{%
+       \setmathchar{%
+%               \typeout{Processing <#1><#2>}
+               \compound#2\one{#2}\two
+               \ifcompound
+%                       \typeout{Is COMPOUND}
+                       ({#1}_1,\ldots,{#1}_{#2})
+               \else
+                       \ifcat N#2
+                               ({#1}_1,\ldots,{#1}_{#2})
+                       \else
+                               \ifcase#2
+                                       ({#1}_0)\or
+                                       ({#1}_1)\or
+                                       ({#1}_1,{#1}_2)\or
+                                       ({#1}_1,{#1}_2,{#1}_3)\or
+                                       ({#1}_1,{#1}_2,{#1}_3,{#1}_4)\else
+%                                       \typeout{In ELSE of the IFCASE}
+                                       ({#1}_1,\ldots,{#1}_{#2})
+                               \fi
+                       \fi
+               \fi}}
+\newcommand{\xtu}[1]{\vlist{x}{#1}}
+\newcommand{\ytu}[1]{\vlist{y}{#1}}
+\newcommand{\ztu}[1]{\vlist{z}{#1}}
+\newcommand{\btu}[1]{\vlist{b}{#1}}
+\newcommand{\ptu}[1]{\vlist{p}{#1}}
+\newcommand{\qtu}[1]{\vlist{q}{#1}}
+\newcommand{\tup}[2]{\vlist{#2}{#1}}
+\newcommand{\xk}{x_1,\ldots,x_k}
+\newcommand{\xkm}{x_1,\ldots,x_{k-1}}
+
+\newif\ifcompound
+\def\compound#1\one#2\two{%
+       \def\one{#1}
+       \def\two{#2}
+       \if\one\two
+               \compoundfalse
+       \else
+               \compoundtrue
+       \fi}
+
+
+
+\newcommand{\tu}[2]{(\ve{#1}{#2})}
+\newcommand{\tud}[3]{(\ve{#1}{#2}{#3})}
+
+\newcommand{\futu}[3]{(\fuve#1#2#3)}
+%
+% wedges of many things
+%
+\newcommand{\xwe}[1]{\ifcase 3{#1} {x_1\wedge x_2\wedge x_3} \else
+\ifcase 4{#1} {x_1\wedge x_2\wedge x_3\wedge x_4} \else {x_1\wedge \cdots \wedge
+x_{#1}}\fi\fi}
+\newcommand{\we}[2]{\ifcase 3#2 {\ang { {#1}_1\wedge {#1}_2\wedge {#1}_3 } } \else
+\ifcase 4{#1} {\ang { {#1}_1\wedge {#1}_2\wedge {#1}_3\wedge {#1}_{4} } }
+\else {\ang { {#1}_1\wedge \cdots\wedge {#1}_{#2}}}\fi\fi}
+%
+\newcommand{\phione}{\es'}
+\newcommand{\phidoub}{\es''}
+\newcommand{\phitrip}{\es'''}
+\newcommand{\dphione}{{\bf 0'}}
+\newcommand{\dphidoub}{{\bf 0''}}
+\newcommand{\dphitrip}{{\bf 0'''}}
+\newcommand{\st}{\mathrel{:}}
+\newcommand{\e}{\{e\}}
+\newcommand{\eee}[2]{\{e\}_{#2}^{#1}}
+\newcommand{\ess}{\{e\}_s}
+\newcommand{\esub}[1]{\{e_{#1}\}}
+\newcommand{\esubsub}[2]{{\{e_{#1}\}}_{#2}}
+\newcommand{\et}{\{e\}_t}
+\newcommand{\join}{\oplus}
+\newcommand{\poneE}{\equiv_{\rm p}^1}
+\newcommand{\mE}{\equiv_{\rm m}}
+\newcommand{\pmE}{\equiv_{\rm m}^{\rm p}}
+\newcommand{\phiawe}{\Phi_e^A}
+\newcommand{\hpmE}{\equiv_{\rm m}^{\rm h}}
+\newcommand{\iE}{\equiv_{\rm i}}
+\newcommand{\TE}{\equiv_{\rm T}}
+\newcommand{\hpTE}{\equiv_{\rm T}^{\rm h}}
+\newcommand{\ttE}{\equiv_{{\rm tt}}}
+\newcommand{\TJ}{T_j}
+\newcommand{\mLE}{\le_{\rm m}}
+\newcommand{\dLE}{\le_{\rm d}}
+\newcommand{\cLE}{\le_{\rm c}}
+\newcommand{\pLE}{\le_{\rm p}}
+\newcommand{\rLE}{\le_{\rm r}}
+\newcommand{\dE}{\equiv_{\rm d}}
+\newcommand{\cE}{\equiv_{\rm c}}
+\newcommand{\pE}{\equiv_{\rm p}}
+\newcommand{\rE}{\equiv_{\rm r}}
+\newcommand{\oneLE}{\le_1}
+\newcommand{\oneE}{\equiv_1}
+\newcommand{\oneL}{<_1}
+\newcommand{\pmLE}{\le_{\rm m}^{\rm p}}
+\newcommand{\hpmLE}{\le_{\rm m}^{\rm h}}
+\newcommand{\hpmL}{<_{\rm m}^{\rm h}}
+\newcommand{\hpmtoE}{\equiv_{\rm m}^{{\rm h}\hbox{-}{\rm to}}}
+\newcommand{\hpmtoL}{<_{\rm m}^{{\rm h}\hbox{-}{\rm to}}}
+\newcommand{\hpmtoLE}{\le_{\rm m}^{{\rm h}\hbox{-}{\rm to}}}
+\newcommand{\hpmto}{\le_{\rm m}^{{\rm h}\hbox{-}{\rm to}}}
+\newcommand{\Ba}{\hbox{{\bf a} }}
+\newcommand{\Bb}{\hbox{{\bf b} }}
+\newcommand{\Bc}{\hbox{{\bf c} }}
+\newcommand{\Bd}{\hbox{{\bf d} }}
+\newcommand{\nre}{\hbox{{\it n}-r.e.}}
+\newcommand{\Bnre}{\hbox{{\bf n-r.e.}}}
+%\newcommand{\implies}{\Rightarrow}
+\newcommand{\into}{\rightarrow}
+\renewcommand{\AE}{\forall^\infty}
+\newcommand{\IO}{\exists^\infty}
+%\newcommand{\IO}{\buildrel \infty \over \exists\!\!}
+\newcommand{\ep}{\epsilon}
+\newcommand{\es}{\emptyset}
+\newcommand{\isom}{\simeq}
+\newcommand{\nisom}{\not\simeq}
+
+\newcommand{\lf}{\left\lfloor}
+\newcommand{\rf}{\right\rfloor}
+\newcommand{\lc}{\left\lceil}
+\newcommand{\rc}{\right\rceil}
+\newcommand{\Ceil}[1]{\left\lceil {#1}\right\rceil}
+\newcommand{\ceil}[1]{\left\lceil {#1}\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor{#1}\right\rfloor}
+
+\newcommand{\nth}{n^{th}}
+\newcommand{\TLE}{\le_{\rm T}}
+\newcommand{\ttLE}{\le_{\rm tt}}
+\newcommand{\nttLE}{\not\le_{\rm tt}}
+\newcommand{\bttLE}{\le_{\btt}}
+\newcommand{\bttE}{\equiv_{\btt}}
+\newcommand{\wttLE}{\le_{\wtt}}
+\newcommand{\wttE}{\equiv_{\rm wtt}}
+\newcommand{\bwttLE}{\le_{\bwtt}}
+\newcommand{\bwttE}{\equiv_{\bwtt}}
+\newcommand{\kwttLE}{\le_{\kwtt}}
+\newcommand{\kwttE}{\equiv_{\kwtt}}
+\newcommand{\nwttLE}{\le_{\nwtt}}
+\newcommand{\nwttE}{\equiv_{\nwtt}}
+\newcommand{\ttL}{<_{\rm tt}}
+\newcommand{\kttLE}{\le_{\ktt}}
+\newcommand{\kttL}{<_{\ktt}}
+\newcommand{\kttE}{\equiv_{\ktt}}
+\newcommand{\npttLE}{\le_{\ntt}}
+\newcommand{\nttL}{<_{\ntt}}
+\newcommand{\nttE}{\equiv_{\ntt}}
+\newcommand{\hpTLE}{\le_{\rm T}^{\rm h}}
+\newcommand{\NTLE}{\not\le_{\rm T}}
+\newcommand{\TL}{<_{\rm T}}
+\newcommand{\mL}{<_{\rm m}}
+\newcommand{\pTL}{<_{\rm T}^{\rm p}}
+\newcommand{\pT}{\le_{\rm T}^{\rm p}}
+\newcommand{\pTLE}{\le_{\rm T}^{\rm p}}
+\newcommand{\pttE}{\equiv_{{\rm tt}}^p}
+\newcommand{\doub}{\es''}
+\newcommand{\trip}{\es'''}
+%
+% definitions with macros
+%
+\newcommand{\inter}{\cap}
+\newcommand{\union}{\cup}
+\newcommand{\sig}[1]{\sigme_{#1} }
+\newcommand{\s}[1]{\s_{#1}}
+\newcommand{\LMA}{{\rm L}(M^A)}
+\newcommand{\Ah}{{\hat A}}
+\newcommand{\monus}{\;\raise.5ex\hbox{{${\buildrel
+   \ldotp\over{\hbox to 6pt{\hrulefill}}}$}}\;}
+\newcommand{\dash}{\hbox{-}}
+\newcommand{\infinity}{\infty}
+\newcommand{\ie}{\hbox{ i.e.  }}
+\newcommand{\eg}{\hbox{ e.g.  }}
+
+% BEIGEL"S MACROS FOR THEOREM STUFF.
+% WHEN DOING A THEOREM DO
+% \begin{
+%
+% WHEN DOING A LEMMA DO
+%
+% \begin{lemma}\label{le:NAME}
+%
+%
+%  also works for section se, corollary co, definition de,
+%  fact fa
+%
+%  use \ref, like
+%  I will prove theorem ~\ref{th:ONE}
+%
+\newcounter{savenumi}
+\newenvironment{savenumerate}{\begin{enumerate}
+\setcounter{enumi}{\value{savenumi}}}{\end{enumerate}
+\setcounter{savenumi}{\value{enumi}}}
+\newtheorem{theoremfoo}{Theorem}[section] %by chapter in report style
+\newenvironment{theorem}{\pagebreak[1]\begin{theoremfoo}}{\end{theoremfoo}}
+\newenvironment{repeatedtheorem}[1]{\vskip 6pt
+\noindent
+{\bf Theorem #1}\ \em
+}{}
+
+\newtheorem{lemmafoo}[theoremfoo]{Lemma}
+\newenvironment{lemma}{\pagebreak[1]\begin{lemmafoo}}{\end{lemmafoo}}
+\newtheorem{conjecturefoo}[theoremfoo]{Conjecture}
+\newtheorem{research}[theoremfoo]{Line of Research}
+\newenvironment{conjecture}{\pagebreak[1]\begin{conjecturefoo}}{\end{conjecturefoo}}
+
+\newtheorem{conventionfoo}[theoremfoo]{Convention}
+\newenvironment{convention}{\pagebreak[1]\begin{conventionfoo}\rm}{\end{conventionfoo}}
+
+\newtheorem{porismfoo}[theoremfoo]{Porism}
+\newenvironment{porism}{\pagebreak[1]\begin{porismfoo}\rm}{\end{porismfoo}}
+
+\newtheorem{gamefoo}[theoremfoo]{Game}
+\newenvironment{game}{\pagebreak[1]\begin{gamefoo}\rm}{\end{gamefoo}}
+
+\newtheorem{corollaryfoo}[theoremfoo]{Corollary}
+\newenvironment{corollary}{\pagebreak[1]\begin{corollaryfoo}}{\end{corollaryfoo}}
+
+%\newtheorem{exercisefoo}[theoremfoo]{Exercise}
+%\newenvironment{exercise}{\pagebreak[1]\begin{exercisefoo}\rm}{\end{exercisefoo}}
+
+
+\newtheorem{openfoo}[theoremfoo]{Open Problem}
+\newenvironment{open}{\pagebreak[1]\begin{openfoo}\rm}{\end{openfoo}}
+
+\newenvironment{proof}
+   {\pagebreak[1]{\narrower\noindent {\bf Proof:\quad\nopagebreak}}}{\QED}
+\newenvironment{sketch}
+   {\pagebreak[1]{\narrower\noindent {\bf Proof sketch:\quad\nopagebreak}}}{\QED}
+\newenvironment{comment}{\penalty -50 $(*$\nolinebreak\ }{\nolinebreak $*)$\linebreak[1]\ }
+
+\newcommand{\fig}[1] %usage:\fig{file}
+{
+ \begin{figure}
+ \begin{center}
+ \input{#1}
+ \end{center}
+ \end{figure}
+}
+
+\newtheorem{potanafoo}[theoremfoo]{Potential Analogue}
+\newenvironment{potana}{\pagebreak[1]\begin{potanafoo}\rm}{\end{potanafoo}}
+
+\newtheorem{notefoo}[theoremfoo]{Note}
+\newenvironment{note}{\pagebreak[1]\begin{notefoo}\rm}{\end{notefoo}}
+
+\newtheorem{notabenefoo}[theoremfoo]{Nota Bene}
+\newenvironment{notabene}{\pagebreak[1]\begin{notabenefoo}\rm}{\end{notabenefoo}}
+
+\newtheorem{nttn}[theoremfoo]{Notation}
+\newenvironment{notation}{\pagebreak[1]\begin{nttn}\rm}{\end{nttn}}
+
+\newtheorem{empttn}[theoremfoo]{Empirical Note}
+\newenvironment{emp}{\pagebreak[1]\begin{empttn}\rm}{\end{empttn}}
+
+\newtheorem{examfoo}[theoremfoo]{Example}
+\newenvironment{example}{\pagebreak[1]\begin{examfoo}\rm}{\end{examfoo}}
+
+\newtheorem{dfntn}[theoremfoo]{Def}
+\newenvironment{definition}{\pagebreak[1]\begin{dfntn}\rm}{\end{dfntn}}
+
+\newtheorem{propositionfoo}[theoremfoo]{Proposition}
+\newenvironment{proposition}{\pagebreak[1]\begin{propositionfoo}}{\end{propositionfoo}}
+\newenvironment{prop}{\pagebreak[1]\begin{propositionfoo}}{\end{propositionfoo}}
+
+
+%\renewcommand{\labelenumi}{\roman{enumi}.}
+
+
+
+\newenvironment{algorithm}[1]{\bigskip\noindent ALGORITHM~#1\renewcommand{\theenumii}{\arabic{enumii}}\renewcommand{\labelenumii}{Step \theenumii :}\begin{enumerate}}{\end{enumerate}END OF ALGORITHM\bigskip}
+
+\newenvironment{protocol}[1]{\bigskip\noindent PROTOC~#1\renewcommand{\theenumii}{\arabic{enumii}}\renewcommand{\labelenumii}{Step \theenumii :}\begin{enumerate}}{\end{enumerate}END OF PROTOC\bigskip}
+
+\newenvironment{red}[1]{\noindent REDUCTION~#1\renewcommand{\theenumii}{\arabic{enumii}}\renewcommand{\labelenumii}{Step \theenumii :}\begin{enumerate}}{\end{enumerate}END OF REDUCTION}
+
+
+
+\newenvironment{con}{\noindent CONSTRUCTION\renewcommand{\theenumii}{\arabic{enumii}}\renewcommand{\labelenumii}{Step \theenumii :}\begin{enumerate}}{\end{enumerate}END OF CONSTRUCTION}
+
+
+
+\newenvironment{alg}[1]{\bigskip\noindent ALGORITHM~#1\renewcommand{\theenumii}{\arabic{enumii}}\renewcommand{\labelenumii}{Step \theenumii :}\begin{enumerate}}{\end{enumerate}END OF ALGORITHM\bigskip}
+
+
+
+\newcommand{\yyskip}{\penalty-50\vskip 5pt plus 3pt minus 2pt}
+\newcommand{\blackslug}{\hbox{\hskip 1pt
+       \vrule width 4pt height 8pt depth 1.5pt\hskip 1pt}}
+\newcommand{\QED}{{\penalty10000\parindent 0pt\penalty10000
+       \hskip 8 pt\nolinebreak\blackslug\hfill\lower 8.5pt\null}
+       \par\yyskip\pagebreak[1]}
+
+\newcommand{\BBB}{{\penalty10000\parindent 0pt\penalty10000
+       \hskip 8 pt\nolinebreak\hbox{\ }\hfill\lower 8.5pt\null}
+       \par\yyskip\pagebreak[1]}
+
+\newcommand{\PYI}{CCR-8958528}
+\newtheorem{factfoo}[theoremfoo]{Fact}
+\newenvironment{fact}{\pagebreak[1]\begin{factfoo}}{\end{factfoo}}
+\newenvironment{acknowledgments}{\par\vskip 6pt\footnotesize Acknowledgments.}{\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%
+%%%%%%%%%%  Jim's construction macros.
+%%%%%%%%%%
+
+
+%%% The follow are macros for displaying block structured programs and
+%%% constructions.  Basically, they are dressed up lists, like the
+%%% enumerate and itemize environments.  Use  the construction environment
+%%% for the outermost ``list'' of instruction and for ``sublists'' of
+%%% instructions use the block environment.  E.g.,
+%%%
+%%% \begin{construction}
+%%%   \item {\bf Program for} $M_{p,a}$.
+%%%   \begin{block}
+%%%     \item Input $x$.
+%%%     \item Instructions.  Instructions.  Instructions.  Instructions.
+%%%           Instructions.  Instructions.  Instructions.  Instructions.
+%%%     \begin{block}
+%%%        \item More instructions.  More instructions.  More
+%%%             instructions.   More instructions.
+%%%        \item More instructions.  More instructions.  More
+%%%             instructions.   More instructions.
+%%%     \end{block}
+%%%     \item Instructions.  Instructions.  Instructions.  Instructions.
+%%%     \item Instructions.  Instructions.  Instructions.  Instructions.
+%%%   \end{block}
+%%%   \item {\bf End program for} $M_{p,a}$.
+%%% \end{construction}
+
+
+\newenvironment{construction}{\bigbreak\begin{block}}{\end{block}
+   \bigbreak}
+
+\newenvironment{block}{\begin{list}{\hbox{}}{\leftmargin 1em
+   \itemindent -1em \topsep 0pt \itemsep 0pt \partopsep 0pt}}{\end{list}}
+
+
+%%% If you want to label the statements/blocks in your construction,  use
+%%% the lblock environment instead of the block environment and for each
+%%% item macro, use \item[YOUR_LABEL].  Note that labels are
+%%% do-it-yourself.
+%%%
+%%% Note that in the following, the basic indentation of an lblock at
+%%% level i of nesting (i>0) is (\dimen15 + i * \dimen16).  The default
+%%% value of both \dimen15 and \dimen16 is  0.75em.
+
+\dimen15=0.75em
+\dimen16=0.75em
+
+\newcommand{\lblocklabel}[1]{\rlap{#1}\hss}
+
+\newenvironment{lblock}{\begin{list}{}{\advance\dimen15 by \dimen16
+   \leftmargin \dimen15
+   \itemindent -1em
+   \topsep 0pt
+   \labelwidth 0pt
+   \labelsep \leftmargin
+   \itemsep 0pt
+   \let\makelabel\lblocklabel
+   \partopsep 0pt}}{\end{list}}
+
+
+%%% The lconstruction is an alternative to the construction environment
+%%% which lets you temporarily change the values of \dimen15 and \dimen16.
+
+\newenvironment{lconstruction}[2]{\dimen15=#1 \dimen16=#2
+ \bigbreak\begin{block}}{\end{block}\bigbreak}
+
+
+\newcommand{\Comment}[1]{{\sl ($\ast$\  #1\ $\ast$)}}
+
+
+%%%%%%%%%%
+%%%%%%%%%% End of Jim's construction macros.
+%%%%%%%%%%
+
+\newcommand{\Kobler}{K\"obler}
+\newcommand{\Schoning}{Sch\"oning}
+\newcommand{\Toran}{Tor\'an}
+\newcommand{\Balcazar}{Balc{\'a}zar}
+\newcommand{\Diaz}{D\'{\i}az}
+\newcommand{\Gabarro}{Gabarr{\'o}}
+\newcommand{\Laszlo}{L{\'a}szl{\'o}}
+
+
+\newcommand{\SUM}{{\rm SUM}}
+
+\title{Summary of Known BPDS Results}
+\begin{document}
+
+\centerline{\bf Summary of Known BPDS Results}
+\centerline{\bf by}
+\centerline{\bf Ryan D. Blue {\tt rdblue@gmail.com } and}
+\centerline{\bf Russell Moriarty {\tt rmoriarty@gmail.com } and}
+\centerline{\bf William Gasarch   {\tt gasarch@cs.umd.edu} }
+
+\section{Deterministic Results}
+
+\subsection{1-Probe}
+
+\begin{theorem}
+There exists a $(U,n;s,1)$-BPDS where $s = U$.
+\end{theorem}
+\begin{proof}
+This BPDS is the trivial mapping $(u\in A)? \Rightarrow$ query $CELL[u]$
+\end{proof}
+
+\begin{theorem}\label{th:1plb}
+There does not exist a $(U,n;s,1)$-BPDS where $s < U$
+\end{theorem}
+\begin{proof}
+Assume there exists a $(U,n;s,1)$-BPDS where $s < U$.  Consider the map where
+elements of $[U]$ are mapped to the cell in $[s]$ that would be queried for
+$(u\in A)?$.  Because $U > s$, two elements of $[U]$ map to the same cell, but
+cannot be distinguished using only one query.
+\end{proof}
+
+\subsection{2-Probes}
+
+\begin{theorem}
+There does not exist a non-adaptive $(U,n;s,2)$-BPDS where $s < U$, $\forall n \ge 2$ \cite{bitvectors}
+\end{theorem}
+\begin{note}
+For the $n = 2$ case, the proof that no $(U,2;s,2)$-BPDS exists is similar to
+\ref{th:1plb}.  Assume such a structure exists, and that $s < U$.  Construct a
+similar map, where tuples $\in U \times {0,1}$ are the domain, and elements of
+$[s]$ are the codomain.  Then there exists an element, $u\in [U]$ such that
+both $(u, 0)$ and $(u, 1)$ collide in $[s]$ with other queries.  This means
+that if both other colliding elements are in $A$, then the query for $u$ will
+answer incorrectly.
+\end{note}
+
+\begin{theorem}
+There exists an explicit, adaptive $(U,n;s,2)$-BPDS where $s \le U - \frac{U}{2n-2} + 2n$, $\forall n \le U$ \cite{twothreeprobes}
+\end{theorem}
+
+\begin{theorem}
+There exists an explicit, adaptive $(U,n;s,2)$-BPDS where $s \le O\left( \frac{U\cdot n\cdot \log \left[ \frac{\log U}{n} \right]}{\log U} \right)$, $\forall n \le \log U$ \cite{twothreeprobes}
+\end{theorem}
+
+\subsection{3-Probes}
+
+\begin{theorem}
+There does not exist a $(U,n;s,3)$-BPDS with $n \ge 16 \log U$ and $s < \Omega\left(\frac{n^{1/2}U^{1/2}}{\log^{1/2}U}\right)$ \cite{twothreeprobes}
+\end{theorem}
+
+\begin{theorem}
+There exists a non-explicit, adaptive $(U,n;s,3)$-BPDS with $s \le O\left(n^{1/3}U^{2/3}\right)$ \cite{twothreeprobes}
+\end{theorem}
+
+\subsection{4-Probes}
+
+\begin{theorem}
+There exists a non-explicit, non-adaptive $(U,n;s,4)$-BPDS with $s \le O\left(n^{1/4}U^{3/4}\right)$ \cite{twothreeprobes}
+\end{theorem}
+
+\subsection{General Results}
+
+\begin{theorem}
+There does not exist a $(U,n;s,q)$-BPDS with
+$$
+\binom{s}{q} < \frac{U}{M}
+$$
+where $M$ is the least number such that
+$$
+\binom{M}{0} + \binom{M}{1} + \binom{M}{2} + ... + \binom{M}{n} \ge 2^q + 1
+$$
+\cite{gasarch}
+\end{theorem}
+
+\begin{theorem}
+There exists a non-explicit, non-adaptive $(U,n;s,q)$-BPDS with $s \le n\left(\frac{q-1}{2}\right)U^{\frac{1}{q+1}}$ \cite{bitvectors}
+\end{theorem}
+
+\begin{theorem}
+There exists an explicit, non-adaptive $(U,n;s,q)$-BPDS with $s \le O\left(U^{\frac{1}{\ceil{q/n}}}\right)$ \cite{gasarch}
+\end{theorem}
+
+\section{Probabilistic Results}
+
+\subsection{One-sided Error}
+
+\begin{theorem}
+There exists an explicit $(U,n;s,1;\epsilon)$-OSEBPDS with $s = \frac{4n^2}{\epsilon^2} \log^2 U$ \cite{bitvectors}
+\end{theorem}
+
+\begin{theorem}
+There exists a non-explicit $(U,n;s,1;\epsilon)$-OSEBPDS with $s = \frac{2e^2n^2}{\epsilon^2} \log U$ \cite{bitvectors}
+\end{theorem}
+
+\begin{theorem}
+There does not exists a $(U,n;s,1;\epsilon)$-OSEBPDS with $s \leq o\left( \frac{n^2}{\epsilon^2 \log \left(n/\epsilon\right)} \log U \right)$ \cite{bitvectors}
+\end{theorem}
+
+\begin{theorem}
+For any $\delta$, where   $0 < \delta < 1$, there exists a non-explicit $(U,n;s, O\left( \frac1{\delta} \right);n^{-\delta})$-OSEBPDS with $s = O\left( n^{1+\delta} \log U \right)$ \cite{bitvectors}
+\end{theorem}
+
+\subsection{Two-sided Error}
+
+\begin{theorem}
+There exists a non-explicit $(U,n;s,1;\epsilon)$-TSEBPDS with $s = \frac{200n}{\epsilon^2} \log U$ \cite{bitvectors}
+\end{theorem}
+
+\begin{theorem}
+There does not exist a $(U,n;s,1;\epsilon)$-TSEBPDS with $s \leq o\left( \frac{n}{\epsilon \log \left(1/\epsilon\right)} \log U \right)$ \cite{bitvectors}
+\end{theorem}
+
+\begin{thebibliography}{1}
+
+\bibitem{twothreeprobes}
+N.~Alon and U.~Feige.
+\newblock {On the power of two, three and four probes}.
+\newblock {\em Manuscript}, 2008.
+
+\bibitem{bitvectors}
+H.~Buhrman, P.~Miltersen, J.~Radhakrishnan, and S.~Venkatesh.
+\newblock {Are bitvectors optimal?}
+\newblock In {\em Proceedings of the thirty-second annual ACM symposium on
+  Theory of computing}, pages 449--458. ACM New York, NY, USA, 2000.
+
+\bibitem{gasarch}
+W.~Gasarch.
+\newblock Notes for bit probe seminar.
+\newblock \url{http://www.cs.umd.edu/~gasarch/rit/rit.html}.
+
+\end{thebibliography}
+
+\end{document}
